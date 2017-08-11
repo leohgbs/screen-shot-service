@@ -1,0 +1,6 @@
+node_modules
+config/development.yaml
+config/production.yaml
+config/runtime.json
+.idea/
+.DS_Store

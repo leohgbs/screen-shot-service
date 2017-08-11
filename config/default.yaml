@@ -1,0 +1,16 @@
+rasterizer:
+  command: /usr/local/bin/phantomjs   # phantomjs executable
+  port: 3001           # internal service port. No need to allow inbound or outbound access to this port
+  host: '0.0.0.0'    # host to listen on
+  path: '/tmp/'        # where the screenshot files are stored
+  viewport: '1242x2500' # browser window size. Height frows according to the content
+cache:
+  lifetime: 60000      # one minute, set to 0 for no cache
+server:
+  port: 3000           # main service port
+  host: '0.0.0.0'    # host to listen on
+  useCors: false       # enable CORS support
+qiniu:
+  accessKey: 'xxx'
+  secretKey: 'xxx'
+  bucket: 'xxxx'
